@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxura Travels</title>
+  <!-- TAILCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- FONT -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+  }
+  
+  #imgmount {
+    animation: autoShowAnimation1 both;
+    animation-timeline: view(90% 10%);
+  }
+
+
+  @keyframes autoShowAnimation1 {
+    from {
+      opacity: 0;
+      transform: translateY(200px) scale(1);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @media (max-width:400px) {
+    #imgmount {
+      animation: autoShowAnimation1 both;
+      animation-timeline: view(95% 90%);
+    }
+
+
+    @keyframes autoShowAnimation1 {
+      from {
+        opacity: 0;
+        transform: translateY(200px) scale(1);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+  }
+
+  #contact {
+    animation: autoShowAnimation13 both;
+    animation-timeline: view(100% 0);
+  }
+
+  @keyframes autoShowAnimation13 {
+    from {
+      opacity: 0;
+      transform: translateY(200) scale(1);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>
+
+<body style="font-family:Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;overflow-x: hidden;">
+  <!-- HEADER -->
+  <section>
+    <header class="bg-gradient-to-bl from-[#ebd197] to-white w-full fixed top-0 z-[100]">
+      <div class="container mx-auto px-4  flex justify-between items-center">
+        <!-- LOGO -->
+        <div class="flex items-center space-x-2">
+          <img class="w-20 md:ms-5" src="./pics/ChatGPT Image Jun 10, 2025, 02_38_14 PM.png" alt="">
+          <!-- <a href="index.html" class="font-bold text-[#ffcc33] text-xl">Luxora Travels</a> -->
+        </div>
+
+        <!-- NAVITEMS -->
+        <nav class="hidden xl:flex space-x-30 font-medium items-center">
+          <a href="#hero" class="hover:text-slate-500">HOME</a>
+          <a href="#about" class="hover:text-slate-500">ABOUT</a>
+          <a href="#destination" class="hover:text-slate-500">DESTINATIONS</a>
+          <a href="#services" class="hover:text-slate-500">SERVICES</a>
+          <a href="#booking" class="hover:text-slate-500">BOOKING</a>
+          <a href="#contact" class="hover:text-slate-500">CONTACT</a>
+          <a href="./register.html" class="bg-[#ffcc33] me-5 text-white px-5 py-2 rounded hover:bg-[#f4ca3e] transition">Sign In</a>
+        </nav>
+        <!-- MENUBAR -->
+        <div class="md:hidden relative">
+          <input type="checkbox" id="menuToggle" class="hidden peer" />
+          <label for="menuToggle" class="cursor-pointer">
+            <i class="fas fa-bars text-2xl text-black"></i>
+          </label>
+
+          <!--MENUBAR WORKING -->
+          <div
+            class="hidden peer-checked:block absolute right-6 mt-7 w-75 bg-gradient-to-bl from-[#ebd197] to-white border border-gray-200 shadow-md rounded-md px-4 py-2 space-y-2 z-50">
+            <div class="flex justify-center flex-col gap-2">
+              <a href="#hero" class="block  hover:text-cyan-500">HOME</a>
+              <a href="#about" class="block hover:text-cyan-500">ABOUT</a>
+              <a href="#destination" class="block hover:text-cyan-500">DESTINATIONS</a>
+              <a href="#services" class="block hover:text-cyan-500">SERVICES</a>
+              <a href="#booking" class="block hover:text-cyan-500">BOOKING</a>
+              <a href="#contact" class="block hover:text-cyan-500">CONTACT</a>
+              <a href="./register.html" class="bg-[#f7c46e] text-white px-4 py-1 font-medium rounded w-25">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+ 
+  <!-- HERO -->
+  <section id="HOME" class="min-h-screen w-full "
+    style="background-image: url(./pics/Pi7_Gif.gif);background-repeat: no-repeat;background-position: center;background-size: cover;">
+    <div id="hero" class="min-h-screen p-5" style="background-color: rgba(0, 0, 0, 0.553);">
+      <div class="pt-35 p-5 md:pt-50 md:px-35 text-2xl text-white">
+        <h1 class="text-5xl md:text-7xl font-semibold">Welcome to Luxura</h1>
+        <h1 class="mt-10 md:mt-5">Discover Luxury beyond borders</h1>
+        <h1 class="mt-10 md:mt-5">Curated travel experiences for the sophisticated travel</h1>
+        <!-- button -->
+        <a href="">
+          <h3
+            class="bg-[#ffcc33] me-5 text-white text-xl px-6 py-2 rounded hover:bg-[#f4ca3e] transition w-40 mt-10 md:mt-10">
+            Explore Us</h3>
+        </a>
+      </div>
+      <!-- download button -->
+      <a href="">
+        <div class="hidden md:flex bg-[#B2AC88] px-5 py-3 w-max rounded-3xl ms-310 mt-33 fixed z-90">
+          <h1 class="text-white space-x-2"><span>Download the App</span><i class="fa-brands fa-google-play"></i><i
+              class="fa-brands fa-apple"></i></h1>
+        </div>
+      </a>
+      <!-- quote -->
+      <div class="p-10 mt-15 md:hidden">
+        <h1 class="text-white text-sm italic">"Travel isn’t just about where you go — it’s how luxuriously you arrive in
+          every moment."</h1>
+      </div>
+    </div>
+
+  </section>
+  <!-- ABOUT -->
+  <section id="about" class="bg-white">
+    <div  class="flex-col md:flex flex-row">
+      <div class="p-6 md:p-16 space-y-4 w-90">
+        <h1 class="p-1 text-5xl md:text-5xl font-bold">Discover the World, Luxuriously</h1>
+        <h1 class="ps-2">At Luxura Travels, we believe that travel is not just about visiting new places — it's about
+          experiencing the world in unmatched comfort, elegance, and style. Founded with a passion for personalized
+          service and premium travel design, we bring your dream journeys to life.</h1>
+      </div>
+      <div class="p-5 md:pt-30 md:animate-pulse">
+        <h1 class="p-5 md:text-5xl font-bold md:p-10">Whether you’re planning a romantic honeymoon, a family retreat, or
+          a once-in-a-lifetime solo journey, Luxura Travels is your trusted partner in creating memories that linger
+          long after the journey ends. Let us redefine how you experience the world.</h1>
+          <a href="./about.html"><div class="ms-5 md:ms-10 mb-4  ps-4 md:ps-5 md:pt-[2px] font-[500] bg-white w-[29vw] md:w-[8vw] h-[3vh] md:h-[4vh] rounded " style="box-shadow: 3px 3px 30px rgba(86, 82, 35, 0.786);"><h1>Click here</h1></div></a>
+      </div>
+    </div>
+  </section>
+  <!-- DESTINATION -->
+  <section id="destination" class="min-h-screen"
+    style="background-image: url(./pics/wp10535399.webp);background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <div class="w-full min-h-screen" style="background-color: rgba(0, 0, 0, 0.477);">
+      <!-- booking -->
+      <div class="hidden md:flex relative pt-10">
+
+        <!-- uppersection -->
+        <div class="ms-96 bg-white w-[50vw] h-[15vh] rounded-2xl absolute z-90"
+          style="box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.742);top: 26%;">
+          <div class="flex p-3 justify-evenly">
+
+            <a href="">
+              <div class="p-5 px-8 h-[10vh] items-center hover:text-[#ffcc33]">
+                <div><img class="w-10 mb-2" src="./bookin/flight.png" alt=""></div>
+                <h1 class="text-[10px] ">FLIGHTS</h1>
+              </div>
+              <div class="bg-[#ffcc33] w-[100px] h-[5px] mt-5"></div>
+            </a>
+
+            <a href="">
+              <div class="p-5 h-[10vh] items-center hover:text-[#ffcc33]">
+                <div><img class="w-10 mb-2" src="./bookin/hotel.png" alt=""></div>
+                <h1 class="text-[10px]">HOTELS</h1>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="p-5 h-[10vh] items-center hover:text-[#ffcc33]">
+                <div><img class="w-10 mb-2" src="./bookin/holiday.png" alt=""></div>
+                <h1 class="text-[10px]">HOLIDAY <br> PACKAGES</h1>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="p-5 h-[10vh] items-center hover:text-[#ffcc33]">
+                <div><img class="w-10 mb-2" src="./bookin/train.png" alt=""></div>
+                <h1 class="text-[10px]">TRAINS</h1>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="p-5 h-[10vh] items-center hover:text-[#ffcc33]">
+                <div><img class="w-10 mb-2" src="./bookin/bus.png" alt=""></div>
+                <h1 class="text-[10px] ps-1">BUSES</h1>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="p-5 h-[10vh] items-center hover:text-[#ffcc33]">
+                <div><img class="w-10 mb-2" src="./bookin/visa.png" alt=""></div>
+                <h1 class="text-[10px] ps-2">VISA</h1>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="p-5 h-[10vh] items-center hover:text-[#ffcc33]">
+                <div><img class="w-10 mb-2" src="./bookin/travel.png" alt=""></div>
+                <h1 class="text-[10px]">TRAVEL <br> INSURANCE</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- middlesection -->
+        <div class="mt-40 ms-36 bg-white w-[80vw] h-[50vh] rounded-2xl" style="position: relative;">
+          <!-- 1st -->
+          <div class="flex justify-between p-5">
+            <!-- left -->
+            <div class="ms-4 flex space-x-2 ps-2">
+              <div class="flex items-center mt-15 w-28 h-7 bg-gray-300 rounded-2xl px-3">
+                <input class="rounded-full" type="checkbox"
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                <label for="my-checkbox" class="ml-2 text-sm font-sm text-gray-900">One Way</label>
+              </div>
+              <div class="flex items-center mt-15 w-30 h-7 bg-gray-300 rounded-2xl px-2">
+                <input type="checkbox"
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                <label for="my-checkbox" class="ml-2 text-sm font-sm text-gray-900">Round Trip</label>
+              </div>
+              <div class="flex items-center mt-15 w-28 h-7 bg-gray-300 rounded-2xl px-3">
+                <input type="checkbox"
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                <label for="my-checkbox" class="ml-2 text-sm font-sm text-gray-900">Multi City</label>
+              </div>
+            </div>
+            <!-- right -->
+            <div>
+              <h1 class="mt-15 me-3 text-sm font-sm text-gray-900">Book International and Domestic Flights</h1>
+            </div>
+          </div>
+          <!-- 2nd -->
+          <div class="p-7">
+            <div class="grid grid-cols-5 border rounded-2xl">
+              <div class="border rounded-l-2xl p-3 hover:bg-gradient-to-r from-[#ffe699] to-yellow-200">
+                <h1 class="mb-2">From</h1>
+                <h1 class="text-3xl font-[700]">Delhi</h1>
+                <h1 class="">DEL, Delhi Airport India</h1>
+              </div>
+              <div class="border w-80 p-3 hover:bg-gradient-to-r from-[#ffe699] to-yellow-200">
+                <h1 class="mb-2">To</h1>
+                <h1 class="text-3xl font-[700]">Bengaluru</h1>
+                <h1 class="">BLR, Bengaluru International Airport India</h1>
+              </div>
+              <div class="border w-46 p-3 mx-[86px] hover:bg-gradient-to-r from-[#ffe699] to-yellow-200">
+                <h1 class="mb-2">Departure</h1>
+                <h1 class="text-2xl"><span class="text-3xl font-[600]">18 </span>Jun'25</h1>
+                <h1 class="">Friday</h1>
+              </div>
+              <div class="border w-50 p-3 mx-[36px] hover:bg-gradient-to-r from-[#ffe699] to-yellow-200">
+                <h1>Return</h1>
+                <h1 class="mt-2 text-slate-400 font-[500]">Tap to add a return date for bigger discounts</h1>
+              </div>
+              <div class="border rounded-r-2xl p-3 hover:bg-gradient-to-r from-[#ffe699] to-yellow-200">
+                <h1 class="mb-2">Travallers & Class</h1>
+                <h1 class="text-2xl"><span class="text-3xl font-[600]">1 </span>Travaller</h1>
+                <h1 class="">Economy/Premium Economy</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- searchbar -->
+        <div
+          class="bg-gradient-to-r from-[#ffe699] to-[#ffcc33] w-[13vw] h-[7vh] absolute justify-center text-center rounded-2xl py-1"
+          style="bottom: -20px;left: 41em;">
+          <h1 class="text-white text-2xl font-[700] pt-1">SEARCH</h1>
+        </div>
+      </div>
+      <!--Best Selling Destinations  -->
+      <div>
+        <h1 class=" pt-15 md:pt-25 py-10 mx-10 md:mx-50 text-2xl md:text-3xl font-bold text-white">Best Selling
+          Destinations</h1>
+      </div>
+      <a href="./package.html">
+        <div class="mx-10 md:mx-35 bg-white w-[80vw] h-[180vh] md:h-[50vh] rounded-3xl">
+          <!-- destination cards -->
+          <div class="p-5 md:flex justify-evenly">
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]" src="./destinations/backwater-allepey.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Kerala</h1>
+              <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]" src="./destinations/Explore the offbeat Kinnaur region.avif"
+                alt="">
+              <div class="p-2">
+                <h1 class="">Himachal</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7 md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]"
+                src="./destinations/Picturesque view of snow-covered hills in Gulmarg.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Kashmir</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]" src="./destinations/DYK_Dubai1.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Dubai</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </a>
+      <!-- International destinations -->
+      <div>
+        <h1 class=" pt-15 md:pt-25 py-10 mx-10 md:mx-50 text-2xl md:text-3xl font-bold text-white">International
+          Destinations</h1>
+      </div>
+      <a href="./package.html">
+        <div class="mx-10 md:mx-35 bg-white w-[80vw] h-[180vh] md:h-[50vh] rounded-3xl">
+          <!-- destination cards -->
+          <div class="p-5 md:flex justify-evenly">
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7 md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]" src="./international destinations/hanoi 4.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Vietnam</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]" src="./international destinations/I.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Thailand</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]"
+                src="./international destinations/majestic-mauritus-and-dubai.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Dubai</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]"
+                src="./international destinations/PetronasTwinTowersAndKLCCPark.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Malaysia</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </a>
+      <!-- visa free destinations -->
+      <div>
+        <h1 class=" pt-15 md:pt-25 py-10 mx-10 md:mx-50 text-2xl md:text-3xl font-bold text-white">Visa Free
+          Destinations</h1>
+      </div>
+      <a href="./package.html">
+        <div class="mx-10 md:mx-35 bg-white w-[80vw] h-[187vh] md:h-[48vh] rounded-3xl ">
+          <!-- destination cards -->
+          <div class="p-5 md:flex justify-evenly mb-10">
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]" src="./visafree/Sri lanka.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Sri Lanka</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]" src="./visafree/phuket11.webp" alt="">
+              <div class="p-2">
+                <h1 class="">Thailand</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]" src="./visafree/Grand Park.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Maldives</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+            <!-- childcards -->
+            <div class="mt-5 ms-10 md:ms-7  md:w-[10vw] md:h-[20vh]">
+              <img class="rounded-md w-[50vw] md:h-[30vh]"
+                src="./visafree/Get amazed by the scenery on your way to Medeo.avif" alt="">
+              <div class="p-2">
+                <h1 class="">Almaty</h1>
+                <h1 class="text-slate-300">Starting at $7000</h1>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </a>
+      <div class="flex justify-evenly p-15">
+        <img class="w-[35px] " src="./d-filler/A-LIST.White2025_transparent-288x400.webp" alt="">
+        <img class="w-[75px] " src="./d-filler/Atta-Logo-White-400x245.webp" alt="">
+        <img class="w-[110px] " src="./d-filler/IAA-Logo-white-400x110.webp" alt="">
+        <img class="hidden md:flex w-[95px]" src="./d-filler/luxury_travel_logo-400x144.webp" alt="">
+        <img class="hidden md:flex w-[105px]" src="./d-filler/The-New-York-Times-logo-1-400x82.webp" alt="">
+        <img class="hidden md:flex w-[95px]" src="./d-filler/virtuoso.webp" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- service -->
+  <section id="services" class="bg-gradient-to-t from-[#afc4d9] to-white via-[#afc4d9] h-[195vh] md:h-[290vh]">
+    <!-- services -->
+    <div class="p-8 my-6">
+      <div class="rounded-2xl w-[85vw] h-[47vh] mt-5 md:w-[55vw] md:h-[55vh] md:mx-76"
+        style="background-image: url(./pics/pexels-apasaric-1285625.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
+        <div class="rounded-2xl w-full h-full" style="background-color: rgba(0, 0, 0, 0.538);">
+          <div class="px-5 pt-3 pb-4 md:">
+            <h1 class="text-3xl font-[600] text-[#89CFF0] animate-pulse p-2 md:text-center md:text-4xl md:p-5">Services
+              we
+              provide</h1>
+            <h1 class="font-[600] md:text-center md:text-2xl text-white">Your Journey, Elevated</h1>
+            <p class="py-2 md:px-7 md:py-5 text-white">
+              At Luxura Travels, we craft more than vacations — we design seamless, world-class experiences tailored to
+              your
+              tastes. Explore our signature services that redefine the art of travel.
+            </p>
+            <div
+              class="bg-[#ffcc33] me-5 text-white text-xl px-6 py-2 rounded-xl hover:bg-[#f4ca3e] w-40 mt-10 md:mt-10 md:ms-80">
+             <a href="./service.html"> <h1 class="font-[500] ps-3">Services</h1></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- booking -->
+    <div id="booking" class="p-8 my-6 mt-10">
+      <div class="rounded-2xl w-[85vw] h-[52vh] mt-5 md:w-[65vw] md:h-[68vh] md:mx-56"
+        style="background-image: url(./b-section/8290926-uhd_2560_1440_30fps.mp4\ \(1\).gif\ \(1\).gif);background-repeat: no-repeat;background-position: center;background-size: cover;">
+        <div class="rounded-2xl w-full h-full" style="background-color: rgba(0, 0, 0, 0.538);">
+          <div class="px-5 pt-3 pb-4 md:">
+            <h1 class="text-3xl font-[600] text-[#5F9EA0] animate-pulse p-2 md:text-center md:text-4xl md:p-5">Booking
+            </h1>
+            <h1 class="font-[600] md:text-center md:text-2xl text-white">Book Your Dream Getaway</h1>
+            <p class="py-2 md:px-15 md:py-5 text-white">
+              Plan your perfect escape with ease. Whether you're traveling for leisure, adventure, or romance, our team
+              is here to make every detail flawless. Secure your spot in just a few clicks.
+            </p>
+            <div class="px-3 pt-2 md:ms-85">
+
+              <li class="text-white">Over 50 exotic destinations</li>
+              <li class="text-white">Premium hotels & villas</li>
+              <li class="text-white">Customizable travel packages</li>
+              <li class="text-white">24/7 Customer Support</li>
+
+            </div>
+            <div
+              class="bg-[#ffcc33] me-5 text-white text-xl px-6 py-2 rounded-xl hover:bg-[#f4ca3e] w-40 mt-10 md:mt-10 md:ms-100">
+             <a href="./booking.html"> <h1 class="font-[500] ps-2">Book Now</h1></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="imgmount" class="h-[100vh] w-[100vw] md:h-[200vh] md:w-full pt-120 md:pt-250"
+      style="background-image: url(./endsection-Photoroom-Photoroom.png);background-position:center ;background-repeat: no-repeat;background-size: cover;">
+      <!-- contact -->
+       
+      <div id="contact" class="bg-white w-[50vw] h-[40vh] md:h-[35vh] ms-23 md:ms-94 rounded-2xl p-5">
+        <h1 class="text-xl font-[800] pb-2 md:text-4xl md:px-10 py-2">Plan Your Luxury Escape</h1>
+        <h1 class="font-[500] md:font-[500] md:px-10 py-2">Have questions or ready to start planning? Our experts are
+          here to help.</h1>
+        <a href="./contact.html">
+          <div
+           
+              class="bg-[#ffcc33] me-5 text-white text-xl px-6 py-2 rounded-xl hover:bg-[#f4ca3e] w-40 mt-10 md:mt-10 md:ms-70">
+              Contact Us</div>
+        </a>
+      </div>
+    </section>
+  </section>
+  <!-- footer -->
+  <section class="bg-[#afc4d9] h-[50vh] z-5000 pt-66 md:pt-115">
+    <div class="bg-black h-[78vh] md:h-[70vh]">
+      <div class="md:flex md:p-20">
+        <div class="pt-5 ps-3 ms-5 md:w-100">
+          <h1 class="text-gray-800 py-2 text-xl md:text-2xl">Luxura Travels</h1>
+          <h1 class="text-gray-800 md:text-xl">Discover Luxury Beyond Borders</h1>
+          <img class="md:h-20 w-50" src="./footer1.webp" alt="">
+        </div>
+        <div class="ms-8 mt-8 md:w-100 md:ps-35">
+          <h1 class="text-gray-800 pb-2 text-xl"><u>Quick List</u></h1>
+          <a href="#hero">
+            <li class="text-gray-800 hover:text-yellow-700 transition">HOME</li>
+          </a>
+          <a href="#about">
+            <li class="text-gray-800 hover:text-yellow-700 transition">ABOUT</li>
+          </a>
+          <a href="#destination">
+            <li class="text-gray-800 hover:text-yellow-700 transition">DESTINATIONS</li>
+          </a>
+          <a href="#services">
+            <li class="text-gray-800 hover:text-yellow-700 transition">SERVICES</li>
+          </a>
+          <a href="#booking">
+            <li class="text-gray-800 hover:text-yellow-700 transition">BOOKING</li>
+          </a>
+          <a href="#contact">
+            <li class="text-gray-800 hover:text-yellow-700 transition">CONTACT</li>
+          </a>
+        </div>
+        <div class="md:w-100 md:ms-10">
+          <h1 class="text-gray-800 text-xl pt-10 ms-8">Follow Us</h1>
+          <div class="grid grid-cols-3 md:grid-cols-5 p-5 ms-8  transition">
+            <a href><i class="p-2 fa-brands fa-instagram text-gray-800 hover:text-yellow-700  fa-2x"></i></a>
+            <a href=""><i class="p-2 fa-brands fa-facebook text-gray-800 hover:text-yellow-700 fa-2x"></i></a>
+            <a href=""><i class="p-2 fa-brands fa-pinterest text-gray-800 hover:text-yellow-700 fa-2x"></i></a>
+           <a href=""> <i class="p-2 fa-brands fa-x-twitter text-gray-800 hover:text-yellow-700 fa-2x"></i></a>
+            <a href=""><i class="p-2 fa-brands fa-youtube text-gray-800 hover:text-yellow-700 fa-2x"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class=" pt-1 ms-10 space-y-1 md:ms-150 text-gray-800 hover:text-yellow-700">
+        <h1 class="ps-15">© 2025 Luxura Travels.</h1>
+        <h1 class="ps-19">All rights reserved.</h1>
+        <h1 class="ps-4">Privacy Policy | Terms & Conditions</h1>
+
+      </div>
+    </div>
+  </section>
+</body>
+<!--  -->
+
+</html>

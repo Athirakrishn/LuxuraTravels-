@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body style="font-family:Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;overflow-x: hidden;">
+<header class="bg-gradient-to-bl from-[#ebd197] to-white w-full fixed top-0 z-[100]">
+      <div class="container mx-auto px-4  flex justify-between items-center " >
+        <!-- LOGO -->
+        <div class="flex items-center space-x-2">
+          <img class="w-20" src="./media/logo.png" alt="">
+          
+        </div>
+
+        <!-- NAVITEMS -->
+        <nav class="hidden xl:flex space-x-30 font-medium items-center">
+          <a href="index.html" class="hover:text-slate-500">HOME</a>
+          <a href="about.html" class="hover:text-slate-500">ABOUT</a>
+          <a href="package.html" class="hover:text-slate-500">DESTINATIONS</a>
+          <a href="service.html" class="hover:text-slate-500">SERVICES</a>
+          <a href="booking.html" class="hover:text-slate-500">BOOKING</a>
+          <a href="contact.html" class="hover:text-slate-500">CONTACT</a>
+          <a href="reg.html" class="bg-[#ffcc33] me-5 text-white px-5 py-2 rounded hover:bg-[#f4ca3e] transition">Sign In</a>
+        </nav>
+        </div>
+      </div>
+    </header>
+<div class="package w-full h-full bg-gray-100 pt-40" > <!--color--> 
+        
+<a href="contact.html">
+        <div class="hidden md:flex bg-purple-500 px-5 py-3 w-max rounded-3xl ms-370 mt-140 fixed z-90">
+          <h1 class="text-white space-x-2"><span>Customise My Trip</span>
+        </div>
+</a>
+
+    
+    
+
+<!-- package intro -->
+<div class="relative z-20 w-full max-w-6xl mx-auto px-3 py-10">
+  <div class="flex flex-col-reverse md:flex-row items-center gap-8">
+
+    <div class="md:w-1/2 flex justify-center">
+      <img src="./media/bg-pack1.jpeg" alt="Travel Illustration" class="w-full max-w-md rounded-xl shadow-lg" />
+    </div>
+
+    <div class="md:w-1/2 text-black text-center md:text-left">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+        Discover Breathtaking Destinations
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl text-black/90">
+        Unlock the best travel experiences with handpicked packages, exclusive offers, and curated adventures that cater to every wanderlust-filled soul.
+      </p>
+    </div>
+
+    
+    
+
+  </div>
+</div>
+
+
+<!-- Best Selling Destinations -->
+
+<section class="bg-gray-100 pt-14 bg-cover bg-center bg-no-repeat " style=" background-image: url('./media/') ;" >
+  <div class="mx-auto bg-white w-[90vw] max-w-7xl h-auto md:h-[80vh] rounded-3xl p-6 bg-black " >
+    <h1 class="text-4xl font-bold text-center mb-6">Best Selling Destinations</h1>
+
+    <!-- destination cards -->
+    <div class="grid gap-6 px-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <!-- Destination Card Component -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/kerala.avif" alt="Kerala">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="kerala.html">Kerala</a></h2>
+          <p class="text-sm text-slate-400">Starting at $6000</p>
+        </div>
+      </div>
+
+      <!-- Himachal -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/Himachal.avif" alt="Himachal">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="#">Himachal</a></h2>
+          <p class="text-sm text-slate-400">Starting at $9000</p>
+        </div>
+      </div>
+
+      <!-- Goa -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/goa.avif" alt="Goa">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="goa.html">Goa</a></h2>
+          <p class="text-sm text-slate-400">Starting at $4000</p>
+        </div>
+      </div>
+
+      <!-- South India -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/south_india.avif" alt="South India">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="south_india.html">South India</a></h2>
+          <p class="text-sm text-slate-400">Starting at $10000</p>
+        </div>
+      </div>
+
+      <!-- Thailand -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/Tailand.webp" alt="Thailand">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="thailand.html">Thailand</a></h2>
+          <p class="text-sm text-slate-400">Starting at $11000</p>
+        </div>
+      </div>
+
+    
+
+    </div>
+
+    <div class="grid gap-6 px-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 pt-8">
+
+       <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/Dubai.avif" alt="Dubai">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="dubai.html">Dubai</a></h2>
+          <p class="text-sm text-slate-400">Starting at $30000</p>
+        </div>
+      </div>
+
+      <!-- Kashmir -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/Andaman.avif" alt="Kashmir">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="kashmir.html">Andaman</a></h2>
+          <p class="text-sm text-slate-400">Starting at $23000</p>
+        </div>
+      </div>
+
+      <!-- Destination Card Component -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/Ladakh.webp" alt="Kerala">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="kerala.html">Ladakh</a></h2>
+          <p class="text-sm text-slate-400">Starting at $9000</p>
+        </div>
+      </div>
+
+      <!-- Himachal -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/singapore.avif" alt="Himachal">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="#">Singapore</a></h2>
+          <p class="text-sm text-slate-400">Starting at $34000</p>
+        </div>
+      </div>
+
+      <!-- Goa -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/maldives.avif" alt="Goa">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="goa.html">Maldives</a></h2>
+          <p class="text-sm text-slate-400">Starting at $55000</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Visa into Destinations -->
+<div class="relative z-20 w-full max-w-6xl mx-auto px-4 py-12">
+  <div class="flex flex-col-reverse md:flex-row items-center gap-8">
+
+    <!-- Text Section -->
+    <div class="md:w-1/2 text-black text-center md:text-left">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+        Explore the World – No Visa, No Worries!
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl text-black/90">
+        Tired of visa paperwork? Our visa-free holiday packages let you explore top international destinations without the hassle. Whether it's beach getaways, cultural escapes, or quick weekend trips, you can travel light—no visa required. Book now and enjoy smooth, stress-free adventures!
+      </p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="md:w-1/2 flex justify-center">
+      <img src="./media/girlflight.jpg" alt="Travel Illustration" class="w-full max-w-md rounded-xl shadow-lg" />
+    </div>
+
+  </div>
+</div>
+
+<!-- Visa Free Destinations -->
+ <section class="bg-gray-100 pt-14 ">
+  <div class="mx-auto bg-white w-[90vw] max-w-7xl h-auto md:h-[46vh] rounded-3xl p-6">
+    <h1 class="text-4xl font-bold text-center mb-6">Visa Free Destinations</h1>
+
+    <!-- destination cards -->
+    <div class="grid gap-6 px-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <!-- Destination Card Component -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/Sri lanka.avif" alt="Kerala">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="kerala.html">SriLanka</a></h2>
+          <p class="text-sm text-slate-400">Starting at $20000</p>
+        </div>
+      </div>
+
+      <!-- Himachal -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/vietnum.avif" alt="Himachal">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="#">Vietnum</a></h2>
+          <p class="text-sm text-slate-400">Starting at $33000</p>
+        </div>
+      </div>
+
+      <!-- Goa -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/almaty.avif" alt="Goa">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="goa.html">Almaty</a></h2>
+          <p class="text-sm text-slate-400">Starting at $13000</p>
+        </div>
+      </div>
+
+      <!-- South India -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/south_india.avif" alt="South India">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="south_india.html">South India</a></h2>
+          <p class="text-sm text-slate-400">Starting at $7000</p>
+        </div>
+      </div>
+
+      <!-- Thailand -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/hong_kong.jpg" alt="Thailand">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="thailand.html">Hong kong</a></h2>
+          <p class="text-sm text-slate-400">Starting at $22000</p>
+        </div>
+      </div>
+
+    
+
+    </div>
+
+  
+  </div>
+
+</section>
+
+<!-- Intro Section: Luxura Travels International Destinations -->
+<div class="relative z-20 w-full max-w-6xl mx-auto px-4 py-16">
+  <div class="flex flex-col-reverse md:flex-row items-center gap-10">
+    <!-- image -->
+      <div class="md:w-1/2 flex justify-center">
+      <img src="./media/international.webp" alt="International Destinations" class="w-full max-w-md rounded-xl shadow-lg" />
+    </div>
+    <!-- Text Content -->
+    <div class="md:w-1/2 text-black text-center md:text-left">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+        Experience Iconic Global Getaways
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl text-black/90">
+        Embark on unforgettable journeys to the world's most iconic international destinations with Luxura Travels. Whether you crave vibrant cityscapes, serene beaches, or cultural wonders, our tailor-made packages offer luxury, comfort, and adventure in every detail.
+      </p>
+    </div>
+
+   
+   
+
+  </div>
+</div>
+
+<!-- International Destinations! -->
+ <section class="bg-gray-100 pt-14  pb-10">
+  <div class="mx-auto bg-white w-[90vw] max-w-7xl h-auto md:h-[46vh] rounded-3xl p-6">
+    <h1 class="text-4xl font-bold text-center mb-6">International Destinations!</h1>
+
+    <!-- destination cards -->
+    <div class="grid gap-6 px-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <!-- Destination Card Component -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/kerala.avif" alt="Kerala">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="./media/vietnum.avif">Vietnam</a></h2>
+          <p class="text-sm text-slate-400">Starting at $70000</p>
+        </div>
+      </div>
+
+      <!-- Himachal -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/bali.avif" alt="Himachal">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="#">Bali</a></h2>
+          <p class="text-sm text-slate-400">Starting at $80000</p>
+        </div>
+      </div>
+
+      <!-- Goa -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/hong_kong.jpg" alt="Goa">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="goa.html">Hong Kong</a></h2>
+          <p class="text-sm text-slate-400">Starting at $69000</p>
+        </div>
+      </div>
+
+      <!-- South India -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/europe.avif" alt="South India">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="south_india.html">Europe</a></h2>
+          <p class="text-sm text-slate-400">Starting at $60000</p>
+        </div>
+      </div>
+
+      <!-- Thailand -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+        <img class="h-40 w-full object-cover" src="./media/malayisa.avif" alt="Thailand">
+        <div class="p-3">
+          <h2 class="text-lg font-semibold"><a href="thailand.html">Malayisa</a></h2>
+          <p class="text-sm text-slate-400">Starting at $45000</p>
+        </div>
+      </div>
+
+    
+
+    </div>
+
+  
+  </div>
+
+</section>
+
+<!-- Offers -->
+   
+ <div  class="min-h-screen bg-cover bg-center bg-no-repeat " style="background-image: url('./media/bg2.webp');"> 
+<div class="bg-black/40 min-h-screen flex items-center justify-center px-2 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl items-center ">
+
+      <!-- Card 1 -->
+      <div class="bg-white/90 backdrop-blur-sm shadow-lg rounded-xl p-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 h-50 items-center mb-8 ">
+        <img src="./media/AmarnathYatra.avif" alt="Amarnath Yatra" class="w-full sm:w-28 h-24 object-cover rounded">
+        <div>
+          <h3 class="font-semibold text-lg">NEW: Special Amarnath Yatra Holiday Packages.</h3>
+          <p class="text-sm text-gray-700 mt-1">Get confirmed registration, free Shikara ride & more.</p>
+          <a href="#" class="text-blue-600 font-semibold text-sm mt-3 inline-block">BOOK NOW</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white/90 backdrop-blur-sm shadow-lg rounded-xl p-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 h-50 items-center mb-8 ">
+        <img src="./media/hdfc.avif" alt="Hotel Offer" class="w-full sm:w-28 h-24 object-cover rounded">
+        <div>
+          <h3 class="font-semibold text-lg">Up to 15% OFF*</h3>
+          <p class="text-sm text-gray-700 mt-1">on domestic & international hotels</p>
+          <p  class="my-2">
+          <a href="#" class="text-blue-600 font-semibold text-sm inline-block">BOOK NOW</a>
+        </div>
+      </div>
+    
+      <!-- Card 3 -->
+      <div class="bg-white/90 backdrop-blur-sm shadow-lg rounded-xl p-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 h-50 items-center mb-8">
+        <img src="./media/holidaysinga.avif" alt="Singapore Holiday" class="w-full sm:w-28 h-24 object-cover rounded">
+        <div>
+          <h3 class="font-semibold text-lg">INCLUDED WITH SINGAPORE HOLIDAY PACKAGES:</h3>
+          <p class="text-sm text-gray-700 mt-1">Tickets for Select Attractions at Jewel Changi Airport</p>
+          <a href="#" class="text-blue-600 font-semibold text-sm mt-3 inline-block">BOOK NOW</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white/90 backdrop-blur-sm shadow-lg rounded-xl p-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 h-50 items-center mb-8">
+        <img src="./media/federal.avif" alt="Federal Bank Offer" class="w-full sm:w-28 h-24 object-cover rounded">
+        <div>
+          <h3 class="font-semibold text-lg">Up to 25% OFF* + INTEREST-FREE* EMI</h3>
+          <p class="text-sm text-gray-700 mt-1">on flights, hotels & holiday packages.</p>
+          <p src="" alt="Federal Bank" class="my-2">
+          <a href="#" class="text-blue-600 font-semibold text-sm inline-block">VIEW DETAILS</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div> 
+
+  
+<!-- questions -->
+
+
+
+  <!-- Foreground Content -->
+<footer class="bg-black text-center py-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 mb-6">
+      <img src="./media/footer1.webp" alt="Logo" class="h-12 sm:h-16 w-auto" />
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base text-gray-400">
+      <a href="about.html" class="hover:text-yellow-500 transition">About Us</a>
+      <a href="#" class="hover:text-yellow-500 transition">Terms & Conditions</a>
+      <a href="#" class="hover:text-yellow-500 transition">Privacy Policy</a>
+      <a href="contact.html" class="hover:text-yellow-500 transition">Customer Service Plan</a>
+      <a href="#" class="hover:text-yellow-500 transition">Careers</a>
+      <a href="#" class="hover:text-yellow-500 transition">FAQ</a>
+    </div>
+  </div>
+</footer>
+
+<div class="text-center text-xs sm:text-sm text-gray-400 hover:text-yellow-500 transition bg-black px-4 sm:px-6 lg:px-8 py-4">
+  &copy; 2025 LuxuraTravels Package Tours Travel Agency | Travelers Membership No: 0010 | Powered by LuxuraTravels Tours Ltd | All rights reserved
+</div>
+  </body>
+    </html>

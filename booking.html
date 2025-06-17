@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <!-- TAILCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- FONT -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="font-family:Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;overflow-x: hidden;">
+
+  <!-- HEADER -->
+  <section>
+    <header class="bg-gradient-to-bl from-[#ebd197] to-white w-full fixed top-0 z-[100]">
+      <div class="container mx-auto px-4  flex justify-between items-center">
+        <!-- LOGO -->
+        <div class="flex items-center space-x-2">
+          <img class="w-20 md:ms-5" src="./pics/ChatGPT Image Jun 10, 2025, 02_38_14 PM.png" alt="">
+          <!-- <a href="index.html" class="font-bold text-[#ffcc33] text-xl">Luxora Travels</a> -->
+        </div>
+
+        <!-- NAVITEMS -->
+        <nav class="hidden xl:flex space-x-30 font-medium items-center">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="package.html">DESTINATIONS</a>
+          <a href="service.html">SERVICES</a>
+          <a href="booking.html">BOOKING</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="reg.html" class="bg-[#ffcc33] me-5 text-white px-5 py-2 rounded hover:bg-[#f4ca3e] transition">Sign In</a>
+        </nav>
+        <!-- MENUBAR -->
+        <div class="md:hidden relative">
+          <input type="checkbox" id="menuToggle" class="hidden peer" />
+          <label for="menuToggle" class="cursor-pointer">
+            <i class="fas fa-bars text-2xl text-black"></i>
+          </label>
+
+          <!--MENUBAR WORKING -->
+          <div
+            class="hidden peer-checked:block absolute right-6 mt-7 w-75 bg-gradient-to-bl from-[#ebd197] to-white border border-gray-200 shadow-md rounded-md px-4 py-2 space-y-2 z-50">
+            <div class="flex justify-center flex-col gap-2">
+              <a href="#" class="block  hover:text-cyan-500">HOME</a>
+              <a href="#" class="block hover:text-cyan-500">ABOUT</a>
+              <a href="#" class="block hover:text-cyan-500">DESTINATIONS</a>
+              <a href="#" class="block hover:text-cyan-500">SERVICES</a>
+              <a href="#" class="block hover:text-cyan-500">BOOKING</a>
+              <a href="#" class="block hover:text-cyan-500">CONTACT</a>
+              <a href="#" class="bg-[#f7c46e] text-white px-4 py-1 font-medium rounded w-25">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+  <!-- booking -->
+  <section class="h-screen"
+    style="background-image: url(https://images.pexels.com/photos/158398/niagara-falls-waterfall-horseshoe-158398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <div class="h-screen pt-30 ps-10 md:p-38" style="background-color: rgba(0, 0, 0, 0.415);">
+      <div class="w-[80vw] h-[76vh]  md:h-[69vh] rounded-2xl" style="background-color: rgba(255, 255, 255, 0.452);">
+        <h1 class="text-2xl font-[600] p-5 md:ps-20 md:pt-10 md:text-3xl">Plan Your Journey with Luxura</h1>
+        <h1 class="px-4 md:px-20 md:text-2xl">Tell us about your dream trip — we’ll take care of every detail.</h1>
+        <div class="ms-5 mt-2 space-y-2 md:ms-19 md:grid grid-cols-3 md:mt-10">
+          <div class="md:space-y-1">
+            <div>
+              <h1 class="text-m font-[500]">Full name</h1>
+              <input class="border border-slate-400 px-2 rounded text-slate-800" type="text" placeholder="enter your name">
+            </div>
+           <div class="mt-2 md:mt-4">
+              <h1 class="text-m font-[500]">Email address</h1>
+              <input class="border border-slate-400 px-2 rounded text-slate-800" type="text" placeholder="enter your email">
+           </div>
+          </div>
+          <div class="md:space-y-1">
+            <div class="mb-2 md:mb-4">
+              <h1 class="text-m font-[500]">Destinations</h1>
+              <input class="border border-slate-400 px-2 rounded text-slate-800" type="text"
+                placeholder="eg:Malaysia, Thailand">
+            </div>
+            <h1 class="text-m font-[500]">Travel Date</h1>
+            <div class="flex-col">
+              <h1 class="">Departure date</h1>
+              <input class="border border-slate-400 px-2 rounded text-slate-800" type="date"
+                placeholder="enter your name">
+              <h1 class="">Return date</h1>
+              <input class="border border-slate-400 px-2 rounded text-slate-800" type="date"
+                placeholder="enter your name">
+            </div>
+          </div>
+          <div class="md:space-y-1">
+            <div class="mt-2 md:mb-4">
+              <h1 class="text-m font-[500]">Package Type</h1>
+              <input class="border border-slate-400 px-2 rounded text-slate-800" type="text"
+                placeholder="enter your name">
+            </div>
+            <h1 class="text-m font-[500]">Phone number</h1>
+            <input class="border border-slate-400 px-2 rounded text-slate-800" type="text"
+              placeholder="enter your name">
+              <div class="mt-5">
+                <a href=""><button class="bg-gradient-to-r from-blue-300 to-blue-500 px-5 py-1 rounded-md text-white text-xl font-bold">Book now</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+ <footer class="bg-black text-center py-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 mb-6">
+      <img src="./footer1.webp" alt="Logo" class="h-12 sm:h-16 w-auto" />
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base text-gray-400">
+      <a href="about.html" class="hover:text-yellow-500 transition">About Us</a>
+      <a href="#" class="hover:text-yellow-500 transition">Terms & Conditions</a>
+      <a href="#" class="hover:text-yellow-500 transition">Privacy Policy</a>
+      <a href="contact.html" class="hover:text-yellow-500 transition">Customer Service Plan</a>
+      <a href="#" class="hover:text-yellow-500 transition">Careers</a>
+      <a href="#" class="hover:text-yellow-500 transition">FAQ</a>
+    </div>
+  </div>
+</footer>
+
+<div class="text-center text-xs sm:text-sm text-gray-400 hover:text-yellow-500 transition bg-black px-4 sm:px-6 lg:px-8 py-4">
+  &copy; 2025 LuxuraTravels Package Tours Travel Agency | Travelers Membership No: 0010 | Powered by LuxuraTravels Tours Ltd | All rights reserved
+</div>
+  </section>
+</body>
+
+</html>
